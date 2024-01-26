@@ -482,5 +482,43 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop open">
+      <div class="modal">
+        <button type="button" class="close-button">
+          <svg width="24" height="24" class="close-btn-svg">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button> 
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="form">
+          <div class="form-field">
+            <label for="name" class="label-text">Name</label>
+            <input type="text" name="client-name" id="name" required class="form-input"/>
+            <svg width="18" height="18" ><use href="./images/icons.svg#icon-person"></use></svg>
+          </div>
+          <div class="form-field">
+            <label for="phone" class="label-text">Phone</label>
+            <input type="tel" name="client-phone" id="phone" required class="form-input"/>
+            <svg width="18" height="18" ><use href="./images/icons.svg#icon-phone"></use></svg>
+          </div>
+          <div class="form-field">
+            <label for="email" class="label-text">Email</label>
+            <input type="email" name="client-email" id="email" required class="form-input"/>
+            <svg width="18" height="18" ><use href="./images/icons.svg#icon-email"></use></svg>
+          </div>
+          <div class="textarea-field">
+            <label for="coment" class="textarea-label-text">Coment</label>
+            <textarea name="client-coment" id="coment" rows="8" placeholder="Text input" class="form-textarea"></textarea>
+          </div>
+          <div>
+            <input type="checkbox" name="client-accept" id="checkbox" />
+            <label for="checkbox">
+              <svg class="checkbox-svg" width="18" height="18"><use href=""></use></svg>
+              I accept the terms and conditions of the <a href="">Privacy Policy</a>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
