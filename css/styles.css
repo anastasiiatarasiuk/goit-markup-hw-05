@@ -559,11 +559,13 @@ img {
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   height: 40px;
+  min-width: 165px;
 }
 .subscribe-button-icon {
   fill: #f4f4fd;
+  margin-left: 16px;
 }
 .footer-subscribe-button:hover,
 .footer-subscribe-button:focus {
@@ -599,6 +601,9 @@ img {
   z-index: 2;
   background-color: #fcfcfc;
   border-radius: 4px;
+  box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
   font-size: 16px;
@@ -607,6 +612,7 @@ img {
   letter-spacing: 0.32px;
   text-align: center;
   margin-bottom: 16px;
+  color: #2e2f42;
 }
 
 /* Close button style */
@@ -637,6 +643,7 @@ img {
 .close-button:hover,
 .close-button:focus {
   background-color: #404bbf;
+  border: none;
 }
 .close-button:hover .close-btn-svg,
 .close-button:focus .close-btn-svg {
@@ -670,6 +677,8 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding-left: 38px;
   outline: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon {
   left: 16px;
@@ -697,13 +706,6 @@ img {
   flex-direction: column;
   margin-bottom: 16px;
 }
-.textarea-label-text {
-  color: #8e8f99;
-  font-size: 12px;
-  line-height: 1.17; /* 116.667% */
-  letter-spacing: 0.48px;
-  margin-bottom: 4px;
-}
 .form-textarea {
   resize: none;
   border-radius: 4px;
@@ -713,12 +715,13 @@ img {
   max-height: 336px;
   width: 100%;
   outline: transparent;
-  padding-left: 16px;
-  padding-top: 8px;
+  padding: 8px 16px;
   font-size: 12px;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.48px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
 }
 .form-textarea:hover,
 .form-textarea:focus {
@@ -753,14 +756,15 @@ img {
   margin-right: 8px;
   border-radius: 2px;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hidden-checkbox:checked + .checkbox-label .checkmark {
   border: none;
   background-color: #404bbf;
   cursor: pointer;
-}
-.hidden-checkbox:checked + .checkbox-label .checkmark svg {
-  fill: #ffffff;
+  fill: #f4f4fd;
 }
 .privacy-policy {
   color: #4d5ae5;
@@ -768,11 +772,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.48px;
   text-decoration-line: underline;
-}
-.button-field {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .modal-send-btn {
   cursor: pointer;
@@ -784,10 +783,12 @@ img {
   background-color: #4d5ae5;
   align-items: flex-start;
   gap: 10px;
+  margin: 0 auto;
+  height: 56px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Send button text style */
-  font-family: inherit;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */

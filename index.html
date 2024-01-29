@@ -470,7 +470,7 @@
                 class="subscribe-input"
               />
             </label>
-            <button type="button" class="footer-subscribe-button">
+            <button type="submit" class="footer-subscribe-button">
               Subscribe
               <svg class="subscribe-button-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-telegram"></use>
@@ -490,16 +490,16 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="form">
           <div class="form-field">
-            <label for="name" class="label-text">Name</label>
+            <label for="user-name" class="label-text">Name</label>
             <div class="input-wrap">
               <input
                 type="text"
-                name="client-name"
-                id="name"
+                name="user-name"
+                id="user-name"
                 required
                 class="form-input"
               />
-              <svg width="18" height="18" class="modal-icon">
+              <svg width="18" height="24" class="modal-icon">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -514,7 +514,7 @@
                 required
                 class="form-input"
               />
-              <svg width="18" height="18" class="modal-icon">
+              <svg width="18" height="24" class="modal-icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -529,16 +529,16 @@
                 required
                 class="form-input"
               />
-              <svg width="18" height="18" class="modal-icon">
+              <svg width="18" height="24" class="modal-icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
           <div class="textarea-field">
-            <label for="coment" class="textarea-label-text">Comment</label>
+            <label for="user-coment" class="label-text">Comment</label>
             <textarea
               name="client-coment"
-              id="coment"
+              id="user-coment"
               rows="8"
               placeholder="Text input"
               class="form-textarea"
@@ -547,12 +547,12 @@
           <div class="checkbox-field">
             <input
               type="checkbox"
-              name="client-accept"
-              id="checkbox"
-              value="accept"
+              name="useer-privacy"
+              id="user-privacy"
+              value="true"
               class="hidden-checkbox visually-hidden"
             />
-            <label for="checkbox" class="checkbox-label">
+            <label for="user-privacy" class="checkbox-label">
               <span class="checkmark">
                 <svg width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
@@ -562,9 +562,7 @@
               <a href="" class="privacy-policy">Privacy Policy</a>
             </label>
           </div>
-          <div class="button-field">
-            <button type="submit" class="modal-send-btn">Send</button>
-          </div>
+          <button type="submit" class="modal-send-btn">Send</button>
         </form>
       </div>
     </div>
